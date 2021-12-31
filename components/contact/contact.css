@@ -1,0 +1,98 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin: 0;
+
+  color: white;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+}
+
+.Navbar {
+  text-align: center;
+  word-spacing: 2rem;
+  transform: translateY(-15rem);
+  font-size: 35px;
+  animation: show-navbar 0.7s forwards;
+}
+
+.Home {
+  color: white;
+  text-decoration: none;
+  transition: 1s;
+  transform: inherit;
+}
+
+.Projects {
+  color: white;
+  text-decoration: none;
+  transition: 1s;
+  transform: inherit;
+}
+
+.Contact {
+  color: #0099ff;
+  text-decoration: none;
+  transition: 1s;
+  transform: inherit;
+}
+
+#contact {
+  opacity: 0;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 30rem;
+  animation: move-mail 1s forwards;
+}
+
+@keyframes move-mail {
+    100%{
+      transform:translateY(-10rem);
+      opacity: 1;
+    }
+}
+
+/* Animations */
+.Home:hover {
+  font-size: 50px;
+}
+.Projects:hover {
+  font-size: 50px;
+}
+.Contact:hover {
+  font-size: 50px;
+}
+
+#contact a{
+  color: #0099ff;
+  transition: color 0.5s;
+}
+#contact a:hover{
+  color: #006eb8;
+}
+
+@keyframes show-navbar {
+  100% {
+    transform: translateY(1rem);
+  }
+}
+
+/* Mobile users */
+@media (max-width: 1000px) {
+  .Home::after {
+    content: "\a";
+    white-space: pre;
+  }
+  .Projects::after {
+    content: "\a";
+    white-space: pre;
+  }
+  .Contact::after {
+    content: "\a";
+    white-space: pre;
+  }
+  #contact{
+    margin-top: 20rem;
+  }
+}
