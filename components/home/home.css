@@ -14,25 +14,26 @@ body {
 .Navbar {
   text-align: center;
   word-spacing: 2rem;
+  text-decoration: none;
   transform: translateY(-15rem);
   font-size: 35px;
   animation: show-navbar 0.7s forwards;
 }
 .Home {
   color: #0099ff;
-  text-decoration: none;
+  text-decoration: inherit;
   transition: 1s;
   transform: inherit;
 }
 .Projects {
   color: rgb(255, 255, 255);
-  text-decoration: none;
+  text-decoration: inherit;
   transition: 1s;
   transform: inherit;
 }
 .Contact {
   color: rgb(255, 255, 255);
-  text-decoration: none;
+  text-decoration: inherit;
   transition: 1s;
   transform: inherit;
 }
@@ -50,6 +51,43 @@ body {
   100% {
     transform: translateY(1rem);
   }
+}
+
+/* Links Section */
+.Links {
+  word-spacing: 2rem;
+  text-decoration: none;
+  text-align: right;
+  margin-top: 2%;
+  margin-right: 8%;
+  font-size: 20px;
+}
+/* LinkedIn link */
+#linkedin {
+  text-decoration: inherit;
+  color: white;
+  transition: 0.5s;
+}
+#linkedin:hover{
+  color: rgb(9,102,194);
+}
+#linkedin:active{
+  transition: 0.1s;
+  color: rgb(7, 76, 145);
+}
+/* GitHub link */
+#github {
+  text-decoration: inherit;
+  color: white;
+  transition: 0.5s;
+}
+#github:hover{
+  color: rgb(132, 69, 226);
+}
+#github:active{
+  transition: 0.1s;
+  color: rgb(87, 45, 151);;
+
 }
 
 /* About Section CSS */
