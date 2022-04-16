@@ -1,0 +1,10 @@
+.ShowNav{
+    transform: translateY(-10rem);
+    animation: show-navbar 0.7s forwards;
+}
+
+@keyframes show-navbar {
+    100% {
+      transform: translateY(1rem);
+    }
+  }

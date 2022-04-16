@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.ShowHome{
+  opacity: 0;
+  animation: show-home 1.5s forwards;
+}
+
+@keyframes show-home {
+  100% {
+    opacity: 1;
+
+  }
+}
