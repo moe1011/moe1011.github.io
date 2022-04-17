@@ -5,7 +5,7 @@
 
 @keyframes show-navbar {
     100% {  
-      transform: translateY(1rem);
+      transform: translateY(0rem);
     }
   }
 

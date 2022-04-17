@@ -1,4 +1,4 @@
-.ShowHome{
+.ShowHome {
   opacity: 0;
   animation: show-home 1.5s forwards;
 }
@@ -6,6 +6,64 @@
 @keyframes show-home {
   100% {
     opacity: 1;
+  }
+}
 
+.straight-line {
+  position: fixed;
+  width: 40px;
+  height: 100vh;
+  background: linear-gradient(0deg, #428ee6, #6f40e4);
+  background-size: 400% 400%;
+
+  -webkit-animation: ColorChange 5s ease infinite;
+  -moz-animation: ColorChange 5s ease infinite;
+  -o-animation: ColorChange 5s ease infinite;
+  animation: ColorChange 5s ease infinite;
+}
+
+.css-selector {
+  background: linear-gradient(0deg, #428ee6, #6f40e4);
+  background-size: 400% 400%;
+
+  -webkit-animation: ColorChange 5s ease infinite;
+  -moz-animation: ColorChange 5s ease infinite;
+  -o-animation: ColorChange 5s ease infinite;
+  animation: ColorChange 5s ease infinite;
+}
+
+@-webkit-keyframes ColorChange {
+  0%{background-position:49% 0%}
+  50%{background-position:52% 100%}
+  100%{background-position:49% 0%}
+}
+@-moz-keyframes ColorChange {
+  0%{background-position:49% 0%}
+  50%{background-position:52% 100%}
+  100%{background-position:49% 0%}
+}
+@-o-keyframes ColorChange {
+  0%{background-position:49% 0%}
+  50%{background-position:52% 100%}
+  100%{background-position:49% 0%}
+}
+@keyframes ColorChange {
+  0%{background-position:49% 0%}
+  50%{background-position:52% 100%}
+  100%{background-position:49% 0%}
+}
+
+
+@keyframes backgroundAnimation {
+  from {
+      filter: hue-rotate(0deg);
+  }
+
+  50% {
+      filter: hue-rotate(90deg);
+  }
+
+  to {
+      filter: hue-rotate(0deg);
   }
 }

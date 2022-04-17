@@ -19,7 +19,7 @@ export function Nav() {
         </nav>
       </header>
 
-      <div className="fixed right-0 z-20 mr-36 mt-8">
+      <div className="fixed right-0 z-20 mr-36 mt-4">
         <div className="flex justify-end items-center space-x-5 py-2 px-3 bg-slate-300 shadow-md rounded-xl ShowLinks">
           <p className=" text-slate-900 hover:text-slate-700 ease-in duration-200 cursor-pointer h-10">
             <a
