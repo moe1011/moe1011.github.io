@@ -26,7 +26,7 @@ const projectArray = [
       "Azure Cloud",
     ],
     github: "https://github.com/FinalScript/manage.sys",
-    website: "",
+    website: "https://manage-sys.web.app/",
   },
   {
     picture: wantodoimg,
