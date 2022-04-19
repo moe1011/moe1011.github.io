@@ -5,23 +5,23 @@ import {Link} from "react-scroll"
 export function Nav() {
   return (
     <div className="relative">
-      <header className="fixed w-full z-20">
-        <nav className=" max-w-md flex justify-center space-x-5 py-2 mt-5 mx-auto font-semibold text-gray-900 text-2xl bg-slate-300 rounded-xl shadow-md ShowNav select-none">
+      <header className="fixed w-full px-4 z-20">
+        <nav className="max-w-md flex justify-center space-x-5 py-2  mt-5 mx-auto font-semibold text-gray-900 text-2xl bg-slate-300 rounded-xl shadow-md ShowNav select-none">
           <Link smooth duration={300} to="home" className="hover:text-blue-600 ease-in duration-200 cursor-pointer">
             HOME
           </Link>
           <Link smooth duration={300} to="projects" className="hover:text-blue-600 ease-in duration-200 cursor-pointer">
             PROJECTS
           </Link>
-          <p className="hover:text-blue-600 ease-in duration-200 cursor-pointer">
+          <Link smooth duration={300} to="contact" className="hover:text-blue-600 ease-in duration-200 cursor-pointer">
             CONTACT
-          </p>
+          </Link>
         </nav>
       </header>
 
-      <div className="fixed right-0 z-20 mr-36 mt-4">
+      <div className="flex fixed z-20 mr-36 mt-20 lg:mt-4 lg:right-0 MobileLinks">
         <div className="flex justify-end items-center space-x-5 py-2 px-3 bg-slate-300 shadow-md rounded-xl ShowLinks">
-          <p className=" text-slate-900 hover:text-slate-700 ease-in duration-200 cursor-pointer h-10">
+          <p className=" text-slate-900 hover:text-slate-700 ease-in duration-200 cursor-pointer w-10">
             <a
               title="GitHub"
               href="https://github.com/moe1011"
@@ -40,7 +40,7 @@ export function Nav() {
               </svg>
             </a>
           </p>
-          <p className="text-blue-600 hover:text-blue-800 ease-in duration-200 cursor-pointer h-10">
+          <p className="text-blue-600 hover:text-blue-800 ease-in duration-200 cursor-pointer w-10">
             <a
               title="LinkedIn"
               href="https://www.linkedin.com/in/mohammed-abdulla-b5281b19a/"
@@ -59,7 +59,7 @@ export function Nav() {
               </svg>
             </a>
           </p>
-          <p className="text-purple-600 hover:text-purple-800 ease-in duration-200 cursor-pointer h-11">
+          <p className="text-purple-600 hover:text-purple-800 ease-in duration-200 cursor-pointer w-11">
             <a
               title="Contact"
               href="mailto:moe.a1011@gmail.com"

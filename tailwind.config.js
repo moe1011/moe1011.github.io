@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        card: "30rem",
+        card: "28rem",
       },
     },
     backdropFilter: {

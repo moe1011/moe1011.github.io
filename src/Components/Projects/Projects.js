@@ -45,11 +45,11 @@ export function Projects() {
     <div className="flex flex-wrap justify-center mt-7 select-none">
       {projectArray.map((proj) => {
         return (
-          <div className="w-card mx-10 mb-5 h-auto flex flex-col bg-slate-200 text-slate-900 bg-opacity-30 bg-clip-padding rounded-xl shadow-lg GlassBG transition-all hover:">
-            <img
-              className="object-cover rounded-t-xl h-72"
-              src={proj.picture}
-            />
+          <div
+            className=" w-80 sm:w-card mx-10 mb-5 h-auto flex flex-col bg-slate-200 text-slate-900 bg-opacity-30 bg-clip-padding rounded-xl shadow-lg GlassBG transition-all hover:"
+            key={proj.name}
+          >
+            <img className="object-fit rounded-t-xl h-72" src={proj.picture} />
             <div className="p-2 px-4 flex flex-1 flex-col justify-between space-y-1">
               <div>
                 <h3 className="tracking-wider text-sm font-medium title-font">

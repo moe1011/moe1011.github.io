@@ -19,3 +19,10 @@
       transform: translatex(0rem);
     }
   }
+
+  @media (max-width: 1024px) {
+    .MobileLinks{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+}
