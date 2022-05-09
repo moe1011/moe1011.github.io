@@ -39,13 +39,13 @@ function App() {
         id="projects"
       >
         <div className="container flex flex-col w-full h-auto text-center text-4xl bg-gradient-to-r from-sky-500 to-indigo-500 rounded-xl shadow-md relative">
-          <div className="w-full flex flex-col items-center  p-5">
-            <h1 className="font-semibold text-slate-50">
+          <div className="w-full flex flex-col items-center pt-7">
+            <h1 className="font-semibold text-slate-50 pb-2">
               PROJECTS
             </h1>
 
             <Projects />
-            <div className="pt-4 text-slate-50" id="contact">
+            <div className="pt-8 text-slate-50" id="contact">
             CONTACT
               <ContactForm />
             </div>

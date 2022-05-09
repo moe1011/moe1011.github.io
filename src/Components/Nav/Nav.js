@@ -1,25 +1,41 @@
 import "./Nav.css";
 import React from "react";
-import {Link} from "react-scroll"
+import { Link } from "react-scroll";
+import resume from "../../files/Resume.pdf";
 
 export function Nav() {
   return (
     <div className="relative">
       <header className="fixed w-full px-4 z-20">
         <nav className="max-w-md flex justify-center space-x-5 py-2  mt-5 mx-auto font-semibold text-gray-900 text-2xl bg-slate-300 rounded-xl shadow-md ShowNav select-none">
-          <Link smooth duration={300} to="home" className="hover:text-blue-600 ease-in duration-200 cursor-pointer">
+          <Link
+            smooth
+            duration={300}
+            to="home"
+            className="hover:text-blue-600 ease-in duration-200 cursor-pointer"
+          >
             HOME
           </Link>
-          <Link smooth duration={300} to="projects" className="hover:text-blue-600 ease-in duration-200 cursor-pointer">
+          <Link
+            smooth
+            duration={300}
+            to="projects"
+            className="hover:text-blue-600 ease-in duration-200 cursor-pointer"
+          >
             PROJECTS
           </Link>
-          <Link smooth duration={300} to="contact" className="hover:text-blue-600 ease-in duration-200 cursor-pointer">
+          <Link
+            smooth
+            duration={300}
+            to="contact"
+            className="hover:text-blue-600 ease-in duration-200 cursor-pointer"
+          >
             CONTACT
           </Link>
         </nav>
       </header>
 
-      <div className="flex fixed z-20 mr-36 mt-20 lg:mt-4 lg:right-0 MobileLinks">
+      <div className="flex fixed z-20 mr-28 mt-20 lg:mt-4 lg:right-0 MobileLinks">
         <div className="flex justify-end items-center space-x-5 py-2 px-3 bg-slate-300 shadow-md rounded-xl ShowLinks">
           <p className=" text-slate-900 hover:text-slate-700 ease-in duration-200 cursor-pointer w-10">
             <a
@@ -75,6 +91,11 @@ export function Nav() {
               >
                 <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
               </svg>
+            </a>
+          </p>
+          <p className="text-white text-lg bg-cyan-500 hover:bg-cyan-600 transition-all rounded-lg py-1 px-2">
+            <a href={resume} target="_blank" title="Resume">
+              Resume
             </a>
           </p>
         </div>
