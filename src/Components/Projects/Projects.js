@@ -27,6 +27,7 @@ const projectArray = [
     ],
     github: "https://github.com/FinalScript/manage.sys",
     website: "https://manage-sys.web.app/",
+    alttext: "Backend portion is currently down*"
   },
   {
     picture: wantodoimg,
@@ -37,6 +38,7 @@ const projectArray = [
     stack: ["React"],
     github: "https://github.com/moe1011/wantodo",
     website: "https://wanto-do.netlify.app",
+    alttext: ""
   },
 ];
 
@@ -100,6 +102,7 @@ export function Projects() {
                   </a>
                 </div>
               </div>
+              <span className="alt-text text-sm text-gray-600">{proj.alttext}</span>
             </div>
           </div>
         );

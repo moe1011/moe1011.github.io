@@ -1,11 +1,19 @@
 import "./App.css";
 import { Nav } from "../Nav/Nav";
 import { Projects } from "../Projects/Projects";
-import projectBgImage from "../../images/Mojave15.jpg";
 import backgroundArtSVG from "../../images/RectLight.png";
 import { ContactForm } from "./ContactForm";
+import Rive from "@rive-app/react-canvas";
+import { useRive } from "@rive-app/react-canvas";
 
 function App() {
+  const { rive, RiveComponent } = useRive({
+    src: "riv1.riv",
+    artboard: "Initials Art",
+    animations: "Write Initials",
+    autoplay: true,
+  });
+
   return (
     <div className="bg-slate-100 relative overflow-x-hidden overflow-y-hidden select-none">
       <div className="relative">
@@ -17,19 +25,25 @@ function App() {
       </div>
 
       <Nav />
+
       <section
         className="flex flex-column justify-center items-center h-screen ShowHome"
         id="home"
       >
         <div className="text-center flex justify-center items-center">
           <div className="font-light">
-            <p className="text-3xl sm:text-4xl">Hello, I'm</p>
+            <p className="text-3xl sm:text-4xl mt-20">Hello, I'm</p>
             <p className="text-5xl sm:text-6xl mt-3 select-text">
               Mohammed Abdulla
             </p>
             <p className="text-3xl sm:text-4xl mt-5">
               a Software Engineering student
             </p>
+            <RiveComponent
+              className="h-72 w-72 block m-auto"
+              // onMouseEnter={() => rive && rive.play()}
+              // onMouseLeave={() => rive && rive.pause()}
+            />
           </div>
         </div>
       </section>
@@ -40,13 +54,11 @@ function App() {
       >
         <div className="container flex flex-col w-full h-auto text-center text-4xl bg-gradient-to-r from-sky-500 to-indigo-500 rounded-xl shadow-md relative">
           <div className="w-full flex flex-col items-center pt-7">
-            <h1 className="font-semibold text-slate-50 pb-2">
-              PROJECTS
-            </h1>
+            <h1 className="font-semibold text-slate-50 pb-2">PROJECTS</h1>
 
             <Projects />
             <div className="pt-8 text-slate-50" id="contact">
-            CONTACT
+              CONTACT
               <ContactForm />
             </div>
           </div>
