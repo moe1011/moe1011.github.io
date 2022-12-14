@@ -15,7 +15,7 @@ function App() {
   });
 
   return (
-    <div className="bg-slate-100 relative overflow-x-hidden overflow-y-hidden select-none">
+    <div className="bg-white relative overflow-x-hidden overflow-y-hidden select-none">
       <div className="relative">
         <div className="straight-line sm:left-8"></div>
         <div className="straight-line sm:left-28"></div>
@@ -52,7 +52,7 @@ function App() {
         className="w-full flex justify-center select-none pb-5"
         id="projects"
       >
-        <div className="container flex flex-col w-full h-auto text-center text-4xl bg-gradient-to-r from-sky-500 to-indigo-500 rounded-xl shadow-md relative">
+        <div className="container flex flex-col w-full h-auto text-center text-4xl bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl shadow-md relative">
           <div className="w-full flex flex-col items-center pt-7">
             <h1 className="font-semibold text-slate-50 pb-2">PROJECTS</h1>
 

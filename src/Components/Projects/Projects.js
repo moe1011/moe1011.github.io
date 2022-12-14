@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Projects.css";
 import managesysimg from "../../images/managesys_fp.png";
 import wantodoimg from "../../images/wantodo_fp.png";
+import magic8ballimg from "../../images/8ball_fp.png";
 import codecolor from "../../images/codecolor.png";
 import sitecolor from "../../images/sitecolor.png";
 
@@ -11,7 +12,7 @@ const projectArray = [
     title: "Full-Stack Web App",
     name: "Manage.sys",
     description:
-      "A store management system where users can create accounts, then do CRUD operations with employee data.",
+      "Store management system where users can create accounts, then do CRUD operations with employee data.",
     stack: [
       "React",
       "Redux",
@@ -30,11 +31,22 @@ const projectArray = [
     alttext: "Backend portion is currently down*"
   },
   {
+    picture: magic8ballimg,
+    title: "Front-End",
+    name: "Magic 8 Ball",
+    description:
+      "Magical 8 ball which will react to touch inputs and provide the user with a prediction.",
+    stack: ["React","TailwindCSS","Rive"],
+    github: "https://github.com/moe1011/8Ball",
+    website: "https://moe1011.github.io/8Ball",
+    alttext: ""
+  },
+  {
     picture: wantodoimg,
     title: "Front-End",
     name: "WanTo-Do",
     description:
-      "A simple to-do list created with react, with to-do tasks that persist in local storage.",
+      "Simple to-do list created with react, with to-do tasks that persist in local storage.",
     stack: ["React"],
     github: "https://github.com/moe1011/wantodo",
     website: "https://wanto-do.netlify.app",
@@ -48,10 +60,11 @@ export function Projects() {
       {projectArray.map((proj) => {
         return (
           <div
-            className=" w-80 sm:w-card mx-10 mb-5 h-auto flex flex-col bg-slate-200 text-slate-900 bg-opacity-30 bg-clip-padding rounded-xl shadow-lg GlassBG transition-all hover:"
+            className=" w-80 sm:w-card mx-10 mb-5 h-auto flex flex-col bg-slate-200 text-slate-900 bg-opacity-30 
+            rounded-xl shadow-lg GlassBG transition-all ease-in hover:scale-[1.025]"
             key={proj.name}
           >
-            <img className="object-fit rounded-t-xl h-72" src={proj.picture} />
+            <img className="object-fill sm:object-cover rounded-t-xl h-72" src={proj.picture} />
             <div className="p-2 px-4 flex flex-1 flex-col justify-between space-y-1">
               <div>
                 <h3 className="tracking-wider text-sm font-medium title-font">

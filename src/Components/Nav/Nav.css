@@ -1,6 +1,6 @@
 .ShowNav{
     transform: translateY(-10rem);
-    animation: show-navbar 0.7s forwards;
+    animation: show-navbar 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
 
 @keyframes show-navbar {
@@ -11,7 +11,7 @@
 
   .ShowLinks{
     transform: translatex(25rem);
-    animation: show-links 1s forwards;
+    animation: show-links 1s ease forwards 2s;
   }
 
   @keyframes show-links {

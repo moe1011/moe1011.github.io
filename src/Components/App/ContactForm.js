@@ -1,5 +1,4 @@
 import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
 
 export function ContactForm() {
   return (
@@ -12,7 +11,7 @@ export function ContactForm() {
         <div className="relative mb-4  sm:w-96">
           <label
             htmlFor="emailInput"
-            className="leading-7 text-sm text-gray-700"
+            className="leading-7 text-sm text-gray-800"
           >
             Email
           </label>
@@ -23,13 +22,13 @@ export function ContactForm() {
             aria-describedby="emailHelp"
             placeholder="Enter your email"
             required
-            className="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            className="w-full bg-white rounded border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
         <div className="relative mb-4">
           <label
             htmlFor="messageInput"
-            className="leading-7 text-sm text-gray-700"
+            className="leading-7 text-sm text-gray-800"
           >
             Message
           </label>
@@ -38,13 +37,13 @@ export function ContactForm() {
             name="message"
             placeholder="Enter your message"
             required
-            className="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out h-40"
+            className="w-full bg-white rounded border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-300 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out h-40"
           ></textarea>
         </div>
         <button
           title="Submit Form"
           type="submit"
-          className="text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg"
+          className="text-white bg-blue-600 border-white border-2 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg"
         >
           Send
         </button>
