@@ -60,8 +60,8 @@ export function Projects() {
       {projectArray.map((proj) => {
         return (
           <div
-            className=" w-80 sm:w-card mx-10 mb-5 h-auto flex flex-col bg-slate-200 text-slate-900 bg-opacity-30 
-            rounded-xl shadow-lg GlassBG transition-all ease-in hover:scale-[1.025]"
+            className=" w-[22rem] sm:w-card sm:hover: mx-10 mb-7 h-auto flex flex-col bg-slate-200 text-slate-900 bg-opacity-30 
+            rounded-xl shadow-lg GlassBG transition-all ease-in-out duration-300 hover:-translate-y-5 hover:shadow-xl"
             key={proj.name}
           >
             <img className="object-fill sm:object-cover rounded-t-xl h-72" src={proj.picture} />

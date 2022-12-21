@@ -6,7 +6,7 @@ export function ContactForm() {
       <form
         action="https://formspree.io/f/xpzbyker"
         method="POST"
-        className=" rounded-lg p-4 flex flex-col w-full mt-10 md:mt-0"
+        className=" rounded-lg p-4 flex flex-col w-full mt-0"
       >
         <div className="relative mb-4  sm:w-96">
           <label

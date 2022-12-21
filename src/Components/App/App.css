@@ -14,7 +14,7 @@
 @media (min-width: 640px) {
   .straight-line {
     position: fixed;
-    width: 40px;
+    width: 2.5rem;
     height: 100vh;
     background: linear-gradient(0deg, #428adc, #1665bf);
     background-size: 400% 400%;

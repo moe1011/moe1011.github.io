@@ -10,7 +10,7 @@
   }
 
   .ShowLinks{
-    transform: translatex(25rem);
+    transform: translatex(40rem);
     animation: show-links 1s ease forwards 2s;
   }
 
