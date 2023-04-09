@@ -5,6 +5,7 @@ import wantodoimg from "../../images/wantodo_fp.png";
 import magic8ballimg from "../../images/8ball_fp.png";
 import codecolor from "../../images/codecolor.png";
 import sitecolor from "../../images/sitecolor.png";
+import calculatorimg from "../../images/calculator_fp.png"
 
 const projectArray = [
   {
@@ -28,7 +29,7 @@ const projectArray = [
     ],
     github: "https://github.com/FinalScript/manage.sys",
     website: "https://manage-sys.web.app/",
-    alttext: "Backend portion is currently down*"
+    alttext: "Backend portion is currently down*",
   },
   {
     picture: magic8ballimg,
@@ -36,10 +37,21 @@ const projectArray = [
     name: "Magic 8 Ball",
     description:
       "Magical 8 ball which will react to touch inputs and provide the user with a prediction.",
-    stack: ["React","TailwindCSS","Rive"],
+    stack: ["React", "TailwindCSS", "Rive"],
     github: "https://github.com/moe1011/8Ball",
     website: "https://moe1011.github.io/8Ball",
-    alttext: ""
+    alttext: "",
+  },
+  {
+    picture: calculatorimg,
+    title: "Front-End",
+    name: "Calculator App",
+    description:
+      "A calculator app made for simple calculations, with keyboard shortcuts and an ability to save all your calculations to a text file.",
+    stack: ["React", "Electron", "TailwindCSS", "MathJS"],
+    github: "https://github.com/moe1011/CalculatorApp",
+    website: "",
+    alttext: "",
   },
   {
     picture: wantodoimg,
@@ -50,7 +62,7 @@ const projectArray = [
     stack: ["React"],
     github: "https://github.com/moe1011/wantodo",
     website: "https://wanto-do.netlify.app",
-    alttext: ""
+    alttext: "",
   },
 ];
 
@@ -64,7 +76,10 @@ export function Projects() {
             rounded-xl shadow-lg GlassBG transition-all ease-in-out duration-300 hover:-translate-y-5 hover:shadow-xl"
             key={proj.name}
           >
-            <img className="object-fill sm:object-cover rounded-t-xl h-72" src={proj.picture} />
+            <img
+              className="object-cover rounded-t-xl h-72"
+              src={proj.picture}
+            />
             <div className="p-2 px-4 flex flex-1 flex-col justify-between space-y-1">
               <div>
                 <h3 className="tracking-wider text-sm font-medium title-font">
@@ -107,15 +122,19 @@ export function Projects() {
                       className="transition-all duration-200 grayscale contrast-200 hover:grayscale-0 hover:contrast-100"
                     />
                   </a>
-                  <a href={proj.website} rel="noreferrer" target="_blank">
+                  
+                  {proj.website &&
+                    <a href={proj.website} rel="noreferrer" target="_blank">
                     <img
                       src={sitecolor}
                       className="transition-all duration-200 grayscale contrast-200 hover:grayscale-0 hover:contrast-100"
                     />
-                  </a>
+                  </a>}
                 </div>
               </div>
-              <span className="alt-text text-sm text-gray-600">{proj.alttext}</span>
+              <span className="alt-text text-sm text-gray-600">
+                {proj.alttext}
+              </span>
             </div>
           </div>
         );

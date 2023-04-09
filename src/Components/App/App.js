@@ -45,7 +45,7 @@ function App() {
               Mohammed Abdulla
             </p>
             <p className="text-3xl sm:text-4xl mt-5">
-              a Software Engineering student
+              a Software Engineer
             </p>
             <RiveComponent
               className="h-72 w-72 block m-auto"
