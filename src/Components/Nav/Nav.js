@@ -59,7 +59,7 @@ export function Nav() {
           <p className="text-blue-500 hover:text-blue-600 hover:scale-110 ease-in duration-200 cursor-pointer w-10">
             <a
               title="LinkedIn"
-              href="https://www.linkedin.com/in/mohammed-abdulla-b5281b19a/"
+              href="https://www.linkedin.com/in/mohammed-s-abdulla/"
               rel="noreferrer"
               target="_blank"
               className="text-primary"
