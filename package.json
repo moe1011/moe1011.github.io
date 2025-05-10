@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "homepage": "https://moe1011.github.io",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.2.4",

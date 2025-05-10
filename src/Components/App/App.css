@@ -1,3 +1,14 @@
+/* Hide all content to prevent flash */
+body, html, #root {
+  display: none !important;
+}
+
+/* Override any animations */
+* {
+  animation: none !important;
+  transition: none !important;
+}
+
 .ShowHome {
   opacity: 0;
   animation: show-home 1.5s forwards;
