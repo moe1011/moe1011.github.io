@@ -1,21 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb2b5a66.css",
-    "main.js": "/static/js/main.d9cb9bbd.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/managesys_fp.png": "/static/media/managesys_fp.5a01ba533a1dc4a49785.png",
-    "static/media/8ball_fp.png": "/static/media/8ball_fp.e3e2fe7590e38a0e70dc.png",
-    "static/media/RectLight.png": "/static/media/RectLight.5199d6a642b069468e05.png",
-    "static/media/wantodo_fp.png": "/static/media/wantodo_fp.d69ae58249507240f5d7.png",
-    "static/media/Resume.pdf": "/static/media/Resume.1c5597bb7d27ab6e8d49.pdf",
-    "static/media/calculator_fp.png": "/static/media/calculator_fp.3f3f8639e125f73e4f47.png",
+    "main.js": "/static/js/main.7fcdedda.js",
     "index.html": "/index.html",
-    "main.bb2b5a66.css.map": "/static/css/main.bb2b5a66.css.map",
-    "main.d9cb9bbd.js.map": "/static/js/main.d9cb9bbd.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.7fcdedda.js.map": "/static/js/main.7fcdedda.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb2b5a66.css",
-    "static/js/main.d9cb9bbd.js"
+    "static/js/main.7fcdedda.js"
   ]
 }

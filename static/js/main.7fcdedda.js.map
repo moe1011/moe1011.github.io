@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/main.7fcdedda.js","mappings":"AACAA,OAAOC,SAASC,QAAQ","sources":["index.js"],"sourcesContent":["// Just redirect to the new site\nwindow.location.replace(\"https://www.sonmoe.dev/\");\n"],"names":["window","location","replace"],"sourceRoot":""}
